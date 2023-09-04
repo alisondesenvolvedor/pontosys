@@ -1,0 +1,136 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden
+}
+
+h1 {
+  color: #333;
+}
+
+/* Estilos para o formulário de login */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para o quadro da câmera e a seção de ponto */
+#cameraSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* 100% da altura da viewport */
+}
+
+/* Estilos para o quadro da câmera */
+/* Estilos para o quadro da câmera */
+#cameraPreview {
+  width: 100%;
+  height: 100vh; /* 100% da altura da viewport */
+  border: 2px solid #333;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  object-fit: cover; /* Para manter a proporção de aspecto e preencher a tela */
+}
+
+
+/* Estilos para o texto "Verificação de Ponto" */
+#pointVerificationText {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Estilos para a seção dos botões */
+#buttonSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para o botão de logout */
+#logoutButton {
+  background-color: #ff0000;
+  margin-right: 10px;
+}
+
+#logoutButton:hover {
+  background-color: #cc0000;
+}
+
+/* Estilos para o botão de bater o ponto */
+#checkInButton {
+  background-color: #4caf50;
+  position: absolute;
+  bottom: 20px; /* Ajuste a posição conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  z-index: 1; /* Coloca o botão acima da câmera */
+}
+
+#checkInButton:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para o resultado do registro de ponto */
+#result {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Estilos para o visto verde */
+#successCheck {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+   /* Cor verde com transparência */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Coloca a div do visto acima de tudo */
+}
+
+/* Estilos para o ícone do visto */
+#successIcon {
+  font-size: 100px;
+  color: white;
+}
+
+.success-message {
+  font-size: 24px;
+  color: green;
+  font-weight: bold;
+}

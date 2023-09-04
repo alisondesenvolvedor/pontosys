@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificação de Ponto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>Verificação de Ponto</h1>
+
+  <!-- Formulário de Login -->
+  <section id="loginSection">
+    <form id="loginForm">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" required>
+      <br>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" required>
+      <br>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <!-- Seção de Ponto -->
+  <section id="pontoSection" style="display: none;">
+    <button id="logoutButton">Sair</button>
+    <button id="checkInButton" class="camera-button">Bater o Ponto</button>
+    <p id="result"></p>
+    <p id="locationMessage" style="font-size: 18px; color: #007bff;"></p> <!-- Mensagem de solicitação de localização -->
+    <video id="cameraPreview" autoplay playsinline muted></video>
+    <canvas id="photoCanvas" style="display: none;"></canvas>
+  </section>
+  <div id="successCheck" style="display: none;">
+    <i id="successIcon" class="fas fa-check-circle fa-5x" style="color: green;"></i>
+  </div>
+  
+  <!-- Elemento de imagem oculto -->
+<img id="capturedImage" src="" alt="Imagem Capturada" style="display: none;">
+
+<!-- Botão para confirmar a imagem -->
+<button id="confirmButton" style="display: none;">Confirmar</button>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
